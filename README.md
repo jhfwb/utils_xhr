@@ -6,7 +6,7 @@
 pip install utils_xhr@git+https://github.com/...(后面加上文件的位置)
 
 eg：
-pip install  utils_xhr@git+https://github.com/jhfwb/utils_xhr@egg=utils_xhr
+pip install  utils_xhr@git+https://github.com/jhfwb/utils_xhr#egg=utils_xhr
 ``` 
 
 ## 2.如何开始运行utils_xhr
