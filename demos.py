@@ -5,3 +5,4 @@ from utils_xhr.reflex.reflexUtils import ReflexUtils
 from utils_xhr.reflex import reflexUtils as aaa
 # pyPacking_xhr.PackingTool().create_packing_env(pyPackage='utils_xhr')
 
+replaceFileSign()

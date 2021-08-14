@@ -4,6 +4,7 @@ def replaceFileSign(path,signs=[('@value@','value')],encoding='utf-8'):
     """
     替换文件中的sign。
     警告: 此举会把文件中字符清除掉。
+
     :param path: 替换的文件路径
     :param signs: 替换标签。将文件中的标签替换成新的数据、如:sign=[('@value@','value')]。将文件中的@value@替换成value
     :param encoding: 编码规则
