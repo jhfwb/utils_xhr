@@ -2,19 +2,22 @@ import os
 import re
 import sys
 import time
-def print(s,fontColor='red',backgroundColor='white',displayWay=0,LogPath=''):
+def printC(s='',fontColor='red',backgroundColor='white',displayWay=0,LogPath=''):
     """
     默认字体为红色。背景色为白色
     能够按照颜色在控制台打印出来。可以自定义背景色和字体颜色。下划线等
 
     :param s:打印的内容
-    :param fontColor: (str) red | green | yellow  | pink  | blue| gray | black
+    :param str fontColor: red | green | yellow  | pink  | blue| gray | black
     :param backgroundColor: (str) red | green | yellow | blue  | black
     :param displayWay: (int) 0 普通模式 |
                              1 字体加粗 |
                              4 下划线 |
     :return: None
     """
+    if s=='' or s==None:
+        print(s)
+        return None
     s = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())+" | " + s
     fontColorArr=[('red',31),('green',32),('yellow',33),('pink',35),('blue',34),('gray',37),('black',30)]
     backgroundColorArr=[('red',41),('green',42),('yellow',43),('blue',44),('black',40),('pink',45),('gray',47)]
