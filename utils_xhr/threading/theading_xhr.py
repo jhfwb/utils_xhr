@@ -15,7 +15,9 @@ class TheadingXHR(threading.Thread):
         t.setDaemon(True)
         t.start()
         while self.__sign==0:
-            pass
+            time.sleep(0.2)
+            if t.is_alive()==False:
+                break
     def killThread(self):
         """
         关闭掉自己
@@ -26,7 +28,6 @@ if __name__ == '__main__':
     def haha():
         while True:
             print(1)
+            print(1)
     t主 = TheadingXHR(target=haha)
     t主.start()
-    time.sleep(5)
-    t主.killThread()
