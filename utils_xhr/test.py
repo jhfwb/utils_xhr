@@ -1,6 +1,3 @@
-
-
-
 class hahax():
     def run1(self):
         items=[
@@ -21,6 +18,6 @@ class hahax():
 
 
 if __name__ == '__main__':
-    TheadingXHR()
+    pass
 
 
