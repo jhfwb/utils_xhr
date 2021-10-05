@@ -13,5 +13,6 @@ from utils_xhr import io
 from utils_xhr import path
 from utils_xhr.RR_Comments import printC
 
-__all__=['io','path','printC']
+__all__=['io','path','printC','threading']
+
 
