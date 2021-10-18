@@ -24,6 +24,8 @@ def optionDatas(path='',encoding='utf-8',mode='r',datas=[],isCreateNewFile=False
             fp.close()
         else:
             raise FileExistsError('此文件不存在:'+str(path)+'。建议将方法optinopDatas的参数createNewFile的值置为True以创建文件。')
+    if type(datas)!=type([]):
+        datas=[datas]
     fp = open(file=path, mode=mode, encoding=encoding)
     if mode=='r':
         arr = fp.readlines()
@@ -56,5 +58,5 @@ def readDatas(path='',encoding='utf-8'):
     return arr
 if __name__ == '__main__':
     # optionDatas(path='tttest.txt',encoding='utf-8',mode='a',arr=['你好','我不好'],createNewFile=False)
-    a=optionDatas(path='test.txt',mode='a',datas=[55],isCreateNewFile=True)
+    a=optionDatas(path='test.txt',mode='r',datas=[55],isCreateNewFile=True)
     print(a)
