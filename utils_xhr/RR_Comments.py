@@ -50,8 +50,6 @@ def printC(s='',fontColor='red',backgroundColor='white',displayWay=0,LogPath='')
             fp = open(mode='a', file=LogPath, encoding='ANSI')
         fp.write(s+line+'\n')
         fp.close()
-
-
 class JudgeType:
     #判断类是什么类型
     #核心方法是type()
@@ -225,9 +223,7 @@ class StringTool:
 
         return False
 
-
 if __name__ == "__main__":
-
-    print(StringTool.getSameLevel("223","11"))
+    printC(1)
 
 

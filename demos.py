@@ -6,5 +6,9 @@ from utils_xhr.reflex import reflexUtils as aaa
 # pyPacking_xhr.PackingTool().create_packing_env(pyPackage='utils_xhr')
 # pyPacking_xhr.PackingTool().runningSetup()
 import utils_xhr
-utils_xhr.printC()
-utils_xhr.threading.TheadingXHR()
+def haha():
+    for i in range(10):
+        print('哈哈')
+    raise ValueError(111)
+utils_xhr.ExcuteAssistant().cycleExcute(path='rrr.py',func=haha)
+# utils_xhr.threading.TheadingXHR()
